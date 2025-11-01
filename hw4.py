@@ -4,13 +4,13 @@ print("TSLA Mean Reversion Strategy Output: 2024 – 2025 Data")
 file = open("/workspaces/Data_3500_Programming_Activities/HW4/TSLA.txt")
 lines = file.readlines()
 
-# Print each price value rounded to two decimals (your requested code)
+# Print each price value rounded to two decimals
 for line in lines:
     price = float(line)
     price = round(price, 2)
     print(price)
 
-# Build list of floats
+# Build list
 def is_float(val):
     try:
         float(val)
@@ -51,7 +51,7 @@ print(f"\nTotal profit:  {final_profit:.2f}")
 print(f"First buy:     {first_buy:.2f}")
 print(f"% return:      {final_profit_percentage:.1f}")
 
-# Close the file (best practice)
+# Close the file 
 file.close()
 
 
